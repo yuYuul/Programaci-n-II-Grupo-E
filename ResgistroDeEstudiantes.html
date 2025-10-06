@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Registro de Estudiantes</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #f2f2f2;
+      text-align: center;
+      padding-top: 40px;
+    }
+    form {
+      display: inline-block;
+      text-align: left;
+    }
+    label {
+      display: block;
+      margin-top: 10px;
+      font-weight: bold;
+    }
+    input[type="text"], select {
+      width: 100%;
+      padding: 5px;
+      margin-top: 5px;
+    }
+    .radio-group {
+      margin-top: 5px;
+    }
+    button {
+      margin-top: 15px;
+      padding: 8px 15px;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+    .enviar {
+      background-color: #4CAF50;
+      color: white;
+    }
+    .resetear {
+      background-color: #f44336;
+      color: white;
+      margin-left: 10px;
+    }
+  </style>
+</head>
+<body>
+
+  <form id="registroForm">
+    <h2>Registro de Estudiantes</h2>
+
+    <label>Nombre:</label>
+    <input type="text" name="nombre" required>
+
+    <label>Dirección:</label>
+    <input type="text" name="direccion" required>
+
+    <label>Género:</label>
+    <select name="genero" required>
+      <option value="">Seleccione...</option>
+      <option>Masculino</option>
+      <option>Femenino</option>
+      <option>Otro</option>
+    </select>
+
+    <label>Estado Civil:</label>
+    <div class="radio-group">
+      <input type="radio" name="estado" value="soltero" required> Soltero
+      <input type="radio" name="estado" value="casado"> Casado
+      <input type="radio" name="estado" value="otro"> Otro
+    </div>
+
+    <label>Carrera a estudiar:</label>
+    <select name="carrera" required>
+      <option value="">Seleccione...</option>
+      <option>Ingeniería</option>
+      <option>Medicina</option>
+      <option>Arquitectura</option>
+      <option>Derecho</option>
+    </select>
+
+    <div>
+      <button type="submit" class="enviar">Enviar</button>
+      <button type="reset" class="resetear">Resetear</button>
+    </div>
+
+  </form>
+
+  <script>
+    document.getElementById("registroForm").addEventListener("submit", function(event) {
+      event.preventDefault();
+      alert(" Formulario enviado correctamente.");
+      this.reset();
+    });
+  </script>
+
+</body>
+</html>
