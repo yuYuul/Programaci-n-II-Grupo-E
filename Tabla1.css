@@ -1,0 +1,33 @@
+body{
+    background-color: lightblue;
+    font-family: Arial;
+    margin:10px;
+}
+table{
+    background-color: coral;
+    text-align: center ;
+    border: 2px solid black;
+    padding: 10px;
+    width: 80%;
+    border-collapse: collapse;
+    margin: 0 auto;
+}
+th,td{border: solid 1px black;
+padding: 40px;}
+
+thead{
+    background-color: beige;
+    border-bottom: solid 2px black;
+    color: blanchedalmond;
+}
+
+tr:nth-child(even){
+    background-color: chocolate;
+}
+tr:nth-child(odd){
+    background-color: coral;
+}
+tr:hover td{
+    background-color: chocolate;
+    color:darkgray
+}
