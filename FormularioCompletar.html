@@ -1,0 +1,66 @@
+<!DOCTYPE html><html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Formulario Completar</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #f9f9f9;
+    }
+    form {
+      width: 350px;
+      background-color: white;
+      padding: 20px;
+      border: 2px solid #ccc;
+      border-radius: 10px;
+      margin: 50px auto;
+    }
+    textarea, select, input {
+      width: 100%;
+      margin-bottom: 10px;
+    }
+  </style>
+</head>
+<body>
+  <form>
+    <p>Completar:</p><label>Elija un color:
+  <input type="color">
+</label><br>
+ 
+<label>Escriba un mensaje</label><br>
+<textarea placeholder="Por favor, escriba aquí"></textarea><br>
+ 
+<label>Elija una opción</label><br>
+<select>
+  <option>Java</option>
+  <option>Python</option>
+  <option>C++</option>
+</select><br>
+ 
+<input type="checkbox"> 1ro.
+<input type="checkbox"> 2do.
+<input type="checkbox"> 3ro.<br>
+ 
+<p>Rellene las opciones siguientes:</p>
+ 
+<label>Elija una fecha:
+  <input type="date">
+</label><br>
+ 
+<label>Elija un fichero:
+  <input type="file">
+</label><br>
+ 
+<select multiple>
+  <option>1ro</option>
+  <option>2do</option>
+  <option>3ro</option>
+  <option>4to</option>
+</select><br>
+ 
+<input type="submit" value="Enviar">
+<input type="reset" value="Resetear">
+ 
+  </form>
+</body>
+</html>
